@@ -28,14 +28,14 @@ public class TimeServerHandler extends ChannelHandlerAdapter {
     }
 
     @Override
-    public void channelReadComplete(ChannelHandlerContext ctx) throws Exception {
+    public void channelReadComplete(ChannelHandlerContext ctx)  {
         // netty的write方法并不直接将消息写入SocketChannel中，而是写入到缓冲区
         // 当调用flush时，才会将缓冲区内容写入SocketChannel
         ctx.flush();
     }
 
     @Override
-    public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) throws Exception {
+    public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) {
         ctx.close();
     }
 }

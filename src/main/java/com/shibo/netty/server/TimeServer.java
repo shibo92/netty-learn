@@ -10,10 +10,9 @@ import io.netty.channel.socket.nio.NioServerSocketChannel;
  * @author by shibo on 2020/4/30.
  */
 public class TimeServer {
-    public void bind(int port) {
+    public void bind(int port) throws Exception {
         EventLoopGroup bossGroup = new NioEventLoopGroup();
         EventLoopGroup workerGroup = new NioEventLoopGroup();
-
         try {
             ServerBootstrap b = new ServerBootstrap();
             b.group(bossGroup, workerGroup)
@@ -22,8 +21,6 @@ public class TimeServer {
                     .childHandler(new ChildChannelHandler());
             ChannelFuture f = b.bind(port).sync();
             f.channel().closeFuture().sync();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
         } finally {
             bossGroup.shutdownGracefully();
             workerGroup.shutdownGracefully();
@@ -32,8 +29,16 @@ public class TimeServer {
 
     private class ChildChannelHandler extends ChannelInitializer<SocketChannel> {
         @Override
-        protected void initChannel(SocketChannel socketChannel) throws Exception {
+        protected void initChannel(SocketChannel socketChannel) {
             socketChannel.pipeline().addLast(new TimeServerHandler());
+        }
+    }
+
+    public static void main(String[] args) {
+        try {
+            new TimeServer().bind(8080);
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 }
