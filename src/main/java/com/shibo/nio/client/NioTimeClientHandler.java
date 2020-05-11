@@ -87,8 +87,8 @@ public class NioTimeClientHandler implements Runnable {
             if (key.isConnectable()) {
                 // 如果连接成功，注册读事件到多路复用器，
                 if (sc.finishConnect()) {
-                    sc.register(selector, SelectionKey.OP_READ);
                     doWrite(sc);
+                    sc.register(selector, SelectionKey.OP_READ);
                 } else {
                     System.out.println("连接失败，进程退出");
                     System.exit(1);
