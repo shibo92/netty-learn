@@ -104,7 +104,7 @@ public class MultiplexerTimeServer implements Runnable {
                     byte[] bytes = new byte[readBuffer.remaining()];
                     readBuffer.get(bytes);
                     String body = new String(bytes, "UTF-8");
-                    System.out.println("服务器接收到消息：" + body + "source : " + sc.getRemoteAddress());
+                    System.out.println("服务器接收到消息：" + body + " - source : " + sc.getRemoteAddress());
                     String currentTime = "QUERY TIME".equalsIgnoreCase(body) ? new Date(System.currentTimeMillis()).toString() : "bad order!!";
                     // 将消息异步发送到客户端
                     doWrite(sc, currentTime);
