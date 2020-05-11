@@ -5,8 +5,6 @@ package com.shibo.nio.server;
  */
 public class NioTimeServer {
     public static void main(String[] args) {
-        int port = 8080;
-        MultiplexerTimeServer timeServer = new MultiplexerTimeServer(port);
-        new Thread(timeServer, "NIO-TimeServer-001").start();
+        new Thread(new MultiplexerTimeServer(8080), "NIO-TimeServer-001").start();
     }
 }
