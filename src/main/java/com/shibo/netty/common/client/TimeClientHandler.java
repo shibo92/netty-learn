@@ -1,12 +1,10 @@
-package com.shibo.netty.client;
+package com.shibo.netty.common.client;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 import io.netty.channel.*;
-import io.netty.util.concurrent.EventExecutorGroup;
 
 import java.io.UnsupportedEncodingException;
-import java.util.logging.Logger;
 
 /**
  * @author by shibo on 2020/4/30.

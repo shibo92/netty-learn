@@ -1,4 +1,4 @@
-package com.shibo.netty.client;
+package com.shibo.netty.common.client;
 
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.*;

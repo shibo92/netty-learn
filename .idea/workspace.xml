@@ -2,9 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b1d03656-8d93-4df7-a3f7-224ab4c15e8d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shibo/netty/httpserver/HttpFileServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shibo/netty/httpserver/HttpFileServerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shibo/netty/nianbao/client/TimeClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shibo/netty/nianbao/client/TimeClientHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shibo/netty/nianbao/server/TimeServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shibo/netty/nianbao/server/TimeServerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shibo/netty/serialize/UserInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shibo/nio/client/NioTimeClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shibo/nio/client/NioTimeClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shibo/nio/server/MultiplexerTimeServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shibo/nio/server/MultiplexerTimeServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shibo/netty/client/TimeClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shibo/netty/common/client/TimeClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shibo/netty/client/TimeClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shibo/netty/common/client/TimeClientHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shibo/netty/server/TimeServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shibo/netty/common/server/TimeServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shibo/netty/server/TimeServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shibo/netty/common/server/TimeServerHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,21 +67,29 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.shibo.netty.httpserver" />
       <recent name="com.shibo.nio.client" />
       <recent name="com.shibo.nio.server" />
       <recent name="com.shibo.netty.client" />
       <recent name="com.shibo.netty" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WorkSpace\private\idea\netty-learn\src\main\java\com\shibo\nettypackage" />
+      <recent name="D:\WorkSpace\private\idea\netty-learn\src\main\java\com\shibo\netty" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.NioTimeClient">
+  <component name="RunManager" selected="Application.TimeClient">
     <configuration name="NioTimeClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.shibo.nio.client.NioTimeClient" />
       <module name="netty-learn" />
       <extension name="coverage">
@@ -85,6 +103,8 @@
       </method>
     </configuration>
     <configuration name="NioTimeServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.shibo.nio.server.NioTimeServer" />
       <module name="netty-learn" />
       <extension name="coverage">
@@ -97,25 +117,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TimeClient (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.shibo.netty.test.TimeClient" />
-      <module name="netty-learn" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.shibo.netty.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TimeClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.shibo.netty.client.TimeClient" />
+      <option name="MAIN_CLASS_NAME" value="com.shibo.netty.nianbao.client.TimeClient" />
       <module name="netty-learn" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.shibo.netty.client.*" />
+          <option name="PATTERN" value="com.shibo.netty.nianbao.client.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -124,11 +131,11 @@
       </method>
     </configuration>
     <configuration name="TimeServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.shibo.netty.server.TimeServer" />
+      <option name="MAIN_CLASS_NAME" value="com.shibo.netty.nianbao.server.TimeServer" />
       <module name="netty-learn" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.shibo.netty.server.*" />
+          <option name="PATTERN" value="com.shibo.netty.nianbao.server.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -136,13 +143,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.NioTimeClient" />
+      <item itemvalue="Application.NioTimeServer" />
+      <item itemvalue="Application.TimeServer" />
+      <item itemvalue="Application.TimeClient" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TimeClient" />
+        <item itemvalue="Application.TimeServer" />
         <item itemvalue="Application.NioTimeClient" />
         <item itemvalue="Application.NioTimeServer" />
-        <item itemvalue="Application.TimeServer" />
-        <item itemvalue="Application.TimeClient" />
-        <item itemvalue="Application.TimeClient (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -158,7 +170,12 @@
       <updated>1588238083888</updated>
       <workItem from="1588238090273" duration="8684000" />
       <workItem from="1589006307350" duration="2133000" />
-      <workItem from="1589164968632" duration="15528000" />
+      <workItem from="1589164968632" duration="17283000" />
+      <workItem from="1589249119846" duration="1218000" />
+      <workItem from="1591239054872" duration="1376000" />
+      <workItem from="1615271858176" duration="6095000" />
+      <workItem from="1615365678615" duration="4625000" />
+      <workItem from="1615443344254" duration="4566000" />
     </task>
     <task id="LOCAL-00001" summary="netty demo">
       <created>1589007015961</created>
@@ -202,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589188985644</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="nio demo">
+      <created>1589192091560</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1589192091560</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,124 +239,69 @@
     <option name="LAST_COMMIT_MESSAGE" value="nio demo" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="181" key="#Project_Structure" timestamp="1588240302120">
+    <state x="414" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1615276292322">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="181" key="#Project_Structure/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1588240302120" />
-    <state x="414" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589187194557">
+    <state x="414" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1615276292322" />
+    <state x="765" y="228" key="#com.intellij.ide.util.MemberChooser" timestamp="1615443950523">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="414" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589187194557" />
-    <state x="765" y="239" key="#com.intellij.ide.util.MemberChooser" timestamp="1589180440629">
+    <state x="765" y="228" key="#com.intellij.ide.util.MemberChooser/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1615443950523" />
+    <state x="767" y="448" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1615276142512">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="239" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589180440629" />
-    <state x="690" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588238655101">
+    <state x="767" y="448" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1615276142512" />
+    <state x="740" y="278" key="FileChooserDialogImpl" timestamp="1615272115980">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1588238655101" />
-    <state x="572" y="114" key="CommitChangelistDialog2" timestamp="1589188984570">
+    <state x="740" y="278" key="FileChooserDialogImpl/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1615272115980" />
+    <state width="1877" height="302" key="GridCell.Tab.0.bottom" timestamp="1615289263158">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="572" y="114" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589188984570" />
-    <state x="2492" y="114" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589007015268" />
-    <state width="483" height="478" key="DebuggerActiveHint" timestamp="1589190907665">
+    <state width="1877" height="302" key="GridCell.Tab.0.bottom/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1615289263158" />
+    <state width="1877" height="302" key="GridCell.Tab.0.center" timestamp="1615289263158">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="483" height="478" key="DebuggerActiveHint/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589190907665" />
-    <state x="184" y="86" key="DiffContextDialog" timestamp="1589186989327">
+    <state width="1877" height="302" key="GridCell.Tab.0.center/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1615289263158" />
+    <state width="1877" height="302" key="GridCell.Tab.0.left" timestamp="1615289263158">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="184" y="86" key="DiffContextDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589186989327" />
-    <state width="1877" height="283" key="GridCell.Tab.0.bottom" timestamp="1589190925107">
+    <state width="1877" height="302" key="GridCell.Tab.0.left/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1615289263158" />
+    <state width="1877" height="302" key="GridCell.Tab.0.right" timestamp="1615289263158">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="283" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589190925107" />
-    <state width="1877" height="283" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589015315107" />
-    <state width="1877" height="283" key="GridCell.Tab.0.center" timestamp="1589190925107">
+    <state width="1877" height="302" key="GridCell.Tab.0.right/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1615289263158" />
+    <state width="1877" height="302" key="GridCell.Tab.1.bottom" timestamp="1615289263158">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="283" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589190925107" />
-    <state width="1877" height="283" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589015315107" />
-    <state width="1877" height="283" key="GridCell.Tab.0.left" timestamp="1589190925106">
+    <state width="1877" height="302" key="GridCell.Tab.1.bottom/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1615289263158" />
+    <state width="1877" height="302" key="GridCell.Tab.1.center" timestamp="1615289263158">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="283" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589190925106" />
-    <state width="1877" height="283" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589015315107" />
-    <state width="1877" height="283" key="GridCell.Tab.0.right" timestamp="1589190925107">
+    <state width="1877" height="302" key="GridCell.Tab.1.center/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1615289263158" />
+    <state width="1877" height="302" key="GridCell.Tab.1.left" timestamp="1615289263158">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="283" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589190925107" />
-    <state width="1877" height="283" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589015315107" />
-    <state width="1877" height="283" key="GridCell.Tab.1.bottom" timestamp="1589190925107">
+    <state width="1877" height="302" key="GridCell.Tab.1.left/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1615289263158" />
+    <state width="1877" height="302" key="GridCell.Tab.1.right" timestamp="1615289263158">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="283" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589190925107" />
-    <state width="1877" height="283" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589015315107" />
-    <state width="1877" height="283" key="GridCell.Tab.1.center" timestamp="1589190925107">
+    <state width="1877" height="302" key="GridCell.Tab.1.right/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1615289263158" />
+    <state x="440" y="97" key="SettingsEditor" timestamp="1615275917931">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="283" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589190925107" />
-    <state width="1877" height="283" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589015315107" />
-    <state width="1877" height="283" key="GridCell.Tab.1.left" timestamp="1589190925107">
+    <state x="440" y="97" key="SettingsEditor/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1615275917931" />
+    <state x="681" y="261" width="540" height="524" key="StructurePopup" timestamp="1615368645299">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="283" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589190925107" />
-    <state width="1877" height="283" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589015315107" />
-    <state width="1877" height="283" key="GridCell.Tab.1.right" timestamp="1589190925107">
+    <state x="681" y="261" width="540" height="524" key="StructurePopup/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1615368645299" />
+    <state x="647" y="275" width="626" height="490" key="find.popup" timestamp="1615369591649">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="283" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589190925107" />
-    <state width="1877" height="283" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589015315107" />
-    <state x="2435" y="146" width="994" height="709" key="SettingsEditor" timestamp="1589187053600">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2435" y="146" width="994" height="709" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589187053600" />
-    <state x="681" y="261" width="549" height="524" key="StructurePopup" timestamp="1589190262274">
+    <state x="647" y="275" width="626" height="490" key="find.popup/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1615369591649" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1615275243382">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="681" y="261" width="549" height="524" key="StructurePopup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589190262274" />
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1589188987520">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589188987520" />
-    <state x="2472" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589007017368" />
-    <state x="2012" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1589006558058">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2012" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1589006558058" />
-    <state x="754" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588240442966">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="754" y="438" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1588240442966" />
-    <state x="514" y="259" width="892" height="566" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1589190413319">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="514" y="259" width="892" height="566" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589190413319" />
-    <state x="2124" y="0" width="1424" height="716" maximized="true" key="dock-window-1" timestamp="1588249873015">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="2124" y="0" width="1424" height="716" maximized="true" key="dock-window-1/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1588249873015" />
-    <state x="1940" y="0" width="1424" height="716" maximized="true" key="dock-window-2" timestamp="1588250058735">
-      <screen x="1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="1940" y="0" width="1424" height="716" maximized="true" key="dock-window-2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1588250058735" />
-    <state x="647" y="275" width="626" height="490" key="find.popup" timestamp="1589191021858">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="647" y="275" width="626" height="490" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589191021858" />
-    <state x="702" y="143" key="refactoring.ChangeSignatureDialog" timestamp="1588240998019">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="702" y="143" key="refactoring.ChangeSignatureDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1588240998019" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1588242309285">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1588242309285" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1589185063345">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1589185063345" />
-    <state x="2543" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1588248340412" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/-1366.0.1366.728/0.0.1920.1040@0.0.1920.1040" timestamp="1615275243382" />
   </component>
 </project>
